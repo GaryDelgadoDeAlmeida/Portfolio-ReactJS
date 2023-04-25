@@ -1,0 +1,349 @@
+[
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/WikiEarthAPI",
+        "image": "/content/portfolio/portFolio-rest-api.png",
+        "title": "WikiEarth API",
+        "type": "API Web",
+        "tech": [
+            "SQL",
+            "PHP7",
+            "Console",
+            "Symfony 4.4"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/WikiEarth",
+        "image": "/content/portfolio/portFolio-WikiEarth.png",
+        "title": "WikiEarth",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "SQL",
+            "PHP7",
+            "Console",
+            "Symfony 4.4"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/CalculatriceElectron",
+        "image": "/content/portfolio/portFolio-CalculatriceElectron.jpg",
+        "title": "Calculatrice Eletron",
+        "type": "App",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "JS",
+            "Electron"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/CalculatriceAndroid",
+        "image": "/content/portfolio/portFolio-Calculatrice_Android-V1.jpg",
+        "title": "Calculatrice",
+        "type": "App",
+        "tech": [
+            "JAVA",
+            "Android"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SalesApp",
+        "image": "/content/portfolio/portFolio-SalesApp.jpg",
+        "title": "Sales App",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/WelcomeApp",
+        "image": "/content/portfolio/portFolio-WelcomeApp.jpg",
+        "title": "Welcom App",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SpeciesAPI",
+        "image": "/content/portfolio/portFolio-rest-api.png",
+        "title": "Species API",
+        "type": "API Web",
+        "tech": [
+            "PHP7",
+            "Console",
+            "Symfony 4.4"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/MedicationAPI",
+        "image": "/content/portfolio/portFolio-rest-api.png",
+        "title": "Medication API",
+        "type": "API Web",
+        "tech": [
+            "PHP7",
+            "Console",
+            "Symfony 4.4"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Student",
+        "image": "/content/portfolio/portFolio-Student-V1.jpg",
+        "title": "Student v1",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SlidingMenu",
+        "image": "/content/portfolio/portFolio-SlidingMenu.jpg",
+        "title": "Sliding Menu",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SlideMenuLogin",
+        "image": "/content/portfolio/portFolio-Login.jpg",
+        "title": "Slide Menu Login",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/CarriculumVitae",
+        "image": "/content/portfolio/portFolio-CV.jpg",
+        "title": "Carriculum Vitae",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/GestionAdresse",
+        "image": "/content/portfolio/portFolio-GestionAdresse.jpg",
+        "title": "Gestion d'adresses",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "PHP7",
+            "SQL"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SecondOrderEquation",
+        "image": "/content/portfolio/portFolio-SecondOrderEquation.jpg",
+        "title": "Second Order Equation",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SayHello",
+        "image": "/content/portfolio/portFolio-SayHello.jpg",
+        "title": "SayHello",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form",
+            "Windows Presentation Foundation"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Calculatrice",
+        "image": "/content/portfolio/portFolio-Calculatrice.jpg",
+        "title": "Calculatrice",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Hamming",
+        "image": "/content/portfolio/portFolio-Hamming.jpg",
+        "title": "Hamming",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "PHP"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Employe",
+        "image": "/content/portfolio/portFolio-Employe.jpg",
+        "title": "Employé",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Personne",
+        "image": "/content/portfolio/portFolio-Personne.jpg",
+        "title": "Personne",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "",
+        "image": "/content/portfolio/portFolio-GestionStock.jpg",
+        "title": "GestionStock",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/Batiment",
+        "image": "/content/portfolio/portFolio-Batiment.jpg",
+        "title": "Batiment",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "",
+        "image": "/content/portfolio/portFolio-ffgolf.jpg",
+        "title": "Stage 2019 ffgolf (API REST)",
+        "type": "App web",
+        "tech": [
+            "SQL",
+            "PHP7",
+            "Symfony 3.4"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SimulPetitJeu",
+        "image": "/content/portfolio/portFolio-MiniJeu.jpg",
+        "title": "Simulateur Petit Jeu",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Console"
+        ]
+    },
+    {
+        "link": "/portfolio",
+        "image": "/content/portfolio/portFolio-portFolio.jpg",
+        "title": "PortFolio v2",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "Twig",
+            "PHP7",
+            "SQL",
+            "Symfony 4.4"
+        ]
+    },
+    {
+        "link": "https://epbsconsulting.com",
+        "image": "/content/portfolio/portFolio-EPBS_Consulting.jpg",
+        "title": "EPBS Consulting",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "PHP"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/GSBRapport2016",
+        "image": "/content/portfolio/portFolio-GSBRapport.jpg",
+        "title": "GSB Rapport 2016",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Entity Framework",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SilexGSB",
+        "image": "/content/portfolio/portFolio-SilexGSB.jpg",
+        "title": "SilexGSB",
+        "type": "Web",
+        "tech": [
+            "PHP",
+            "Silex"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/SilexGSB",
+        "image": "/content/portfolio/portFolio-AutoEcole.jpg",
+        "title": "Auto-Ecole 2016",
+        "type": "App",
+        "tech": [
+            "C#",
+            "Windows Form"
+        ]
+    },
+    {
+        "link": "",
+        "image": "/content/portfolio/portFolio-la_Folle_Parenthese.jpg",
+        "title": "La folle parenthèse",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "PHP"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/GSB",
+        "image": "/content/portfolio/portFolio-GSB.jpg",
+        "title": "GSB",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "SQL",
+            "PHP"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/laFleur2013",
+        "image": "/content/portfolio/portFolio-laFleur2013.jpg",
+        "title": "laFleur 2013",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "SQL",
+            "PHP"
+        ]
+    },
+    {
+        "link": "https://github.com/GaryDelgadoDeAlmeida/portfolio",
+        "image": "/content/portfolio/portFolio-debutantPortFolio.jpg",
+        "title": "PortFolio v1",
+        "type": "Web",
+        "tech": [
+            "HTML5",
+            "CSS3"
+        ]
+    }
+]

@@ -1,0 +1,90 @@
+/* ---------------------------------------- *\
+        Overlay image
+\* ---------------------------------------- */
+.overlay-row {
+    display: grid;
+    grid-gap: 25px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(3, 1fr);
+
+    .overlay-card {
+        height: 250px;
+        max-width: 400px;
+
+        .overlay-image {
+            height: 100%;
+            position: relative;
+            margin-bottom: 20px;
+        
+            .image {
+                margin: auto;
+                height: 100%;
+                display: block;
+                max-width: 100%;
+            }
+        
+            .text {
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                font-size: 30px;
+                position: absolute;
+                text-align: center;
+                line-height: 1.5em;
+                color: var(--c-white);
+                transform: translate(-50%, -50%);
+                text-shadow: 2px 2px 2px var(--c-black);
+        
+                .project-title {
+                    color: var(--c-white);
+                    word-break: break-all;
+                }
+        
+                .project-small-text {
+                    font-size: 20px;
+                    color: #808080;
+                }
+            }
+        
+            .hover {
+                top: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: .5s ease;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        
+            &:hover {
+        
+                /* Apparition overlay sur passage souris */
+                .hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// Desktop
+@media screen and (max-width: 1200px) {
+    .overlay-row {
+        grid-template-columns: repeat(2, 1fr);
+
+        .overlay-card {
+            width: 100%;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 768px) {
+    .overlay-row {
+        grid-template-columns: repeat(1, 1fr);
+
+        .overlay-card {
+            max-width: 100%;
+        }
+    }
+}

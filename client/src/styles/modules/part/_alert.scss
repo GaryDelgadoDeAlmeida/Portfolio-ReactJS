@@ -1,0 +1,32 @@
+/* ---------------------------------------- *\
+    Alert
+\* ---------------------------------------- */
+.alert {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+
+    &.alert-information {
+        color: var(--c-white);
+        border: 1px solid var(--c-gray);
+        background-color: var(--c-gray);
+    }
+
+    &.alert-danger {
+        color: var(--c-white);
+        border: 1px solid var(--c-red);
+        background-color: var(--c-red);
+    }
+
+    &.alert-success {
+        color: var(--c-white);
+        border: 1px solid var(--c-green);
+        background-color: var(--c-green);
+    }
+
+    &.alert-warning {
+        border: 1px solid var(--c-orange);
+        background-color: var(--c-orange);
+    }
+}

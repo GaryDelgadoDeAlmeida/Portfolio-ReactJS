@@ -1,0 +1,101 @@
+.admin-skills {
+    // height: 100vh;
+
+    .skills {
+        // 
+
+        .skills-onglet {
+            width: 100%;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+
+                li {
+                    width: 100px;
+                    padding: 15px 0;
+                    cursor: pointer;
+                    text-align: center;
+                    color: var(--c-white);
+                    background-color: var(--c-approxNero);
+
+                    &:not(:last-child) {
+                        border-right: 1px solid var(--c-black);
+                    }
+
+                    &.active {
+                        color: var(--c-approxNero);
+                        font-weight: 700;
+                        background-color: var(--c-white);
+                    }
+                }
+            }
+        }
+
+        .skills-box {
+            padding: 25px;
+            background-color: var(--c-white);
+            box-shadow: 3px 3px 3px var(--c-lightGray);
+
+            &:empty {
+                display: none;
+            }
+
+            .skill-wrapper {
+                // 
+
+                .skill-card {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 0 calc(-1 * 10px) calc(-1 * 10px);
+
+                    .skill-item {
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        margin: 0 0 10px 10px;
+                        border: 1px solid var(--c-lightGray);
+                        box-shadow: 3px 3px 3px var(--c-lightGray);
+
+                        .item {
+                            margin-right: 5px;
+                        }
+
+                        .item-action {
+                            cursor: pointer;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .form {
+                    width: 100%;
+                    padding: 25px 0;
+
+                    form {
+                        display: flex;
+                        flex-direction: row;
+                        height: 40px;
+
+                        input {
+                            width: 80%;
+                            padding: 0 15px;
+                        }
+
+                        button {
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

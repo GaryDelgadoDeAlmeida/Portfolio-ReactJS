@@ -1,0 +1,126 @@
+/* ----------------------------------------------- *\
+    Button
+\* ----------------------------------------------- */
+button {
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 1rem;
+    user-select: none;
+    text-align: center;
+    white-space: nowrap;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &.-inline-flex {
+        gap: 10px;
+        display: inline-flex;
+    }
+
+    &.btn-outline-white {
+        background-color: transparent;
+        color: var(--c-white) !important;
+        border: 1px solid var(--c-white) !important;
+    
+        &:hover {
+            color: var(--c-black) !important;
+            background-color: var(--c-white);
+        }
+    }
+
+    &.btn-outline-blue {
+        background-color: transparent;
+        color: var(--c-blue) !important;
+        border: 1px solid var(--c-blue) !important;
+    
+        &:hover {
+            background-color: var(--c-blue);
+            color: var(--c-white) !important;
+        }
+    }
+
+    &.btn-outline-green {
+        background-color: transparent;
+        color: var(--c-green) !important;
+        border: 1px solid var(--c-green) !important;
+    
+        &:hover {
+            color: var(--c-white) !important;
+            background-color: var(--c-green);
+        }
+    }
+
+    &.btn-semi-rounded {
+        border-radius: 10px;
+    }
+
+    &.btn-rounded {
+        border-radius: 25px !important;
+    }
+    
+    &.btn-start {
+        text-decoration: none;
+        color: var(--c-white);
+        text-transform: uppercase;
+
+        // Mobile
+        @include mobile {
+            width: 110px;
+            height: 35px;
+            font-size: 13px;
+            text-transform: unset;
+        }
+    }
+    
+    &.btn-link {
+        color: var(--c-primaryBlue);
+    }
+    
+    &.btn-primary {
+        color: var(--c-white);
+        background-color: var(--c-shadeCyanBlue);
+        border-color: var(--c-mediumDarkShadeCyanBlue);
+
+        &:hover {
+            background-color: transparent;
+            color: var(--c-shadeCyanBlue) !important;
+        }
+    }
+
+    &.btn-green {
+        color: var(--c-white) !important;
+        background-color: var(--c-green);
+        border: 1px solid var(--c-green) !important;
+    
+        &:hover {
+            background-color: transparent;
+            color: var(--c-green) !important;
+        }
+    }
+
+    &.btn-red {
+        background-color: var(--c-red);
+        color: var(--c-white) !important;
+        border: 1px solid var(--c-red) !important;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--c-red) !important;
+        }
+    }
+
+    span {
+        margin: auto 0;
+    }
+
+    img {
+        height: 25px;
+    }
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--c-lightWhite);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+img {
+  pointer-events: none;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
+:root {
+  /* Color */
+  --c-white: #ffffff;
+  --c-lightWhite: #f7f8fa;
+  --c-lightGray: #e8e8e8;
+  --c-gray: #a9a9a9;
+  --c-metalGray: #999999;
+  --c-dimmGray: #696969;
+  --c-silver: #c8c8c8;
+  --c-lightRed: #ffe0e3;
+  --c-red: #c00000;
+  --c-darkRed: #8B0000;
+  --c-lightGreen: #a8f1c6;
+  --c-greenLime: #198344;
+  --c-green: #188038;
+  --c-lightOrange: #fff9f0;
+  --c-orange: #ffa500;
+  --c-skyBlue: #60d9fa;
+  --c-skyBlueReact: #61dafb;
+  --c-blue: #2962ff;
+  --c-blueReact: #2b81e0;
+  --c-primaryBlue: #0366d6;
+  --c-shadeCyan: #567787;
+  --c-shadeCyanBlue: #1b6ec2;
+  --c-mediumDarkShadeCyanBlue: #1861ac;
+  --c-sadBlue: #3f569b;
+  --c-falseOnyx: #36304a;
+  --c-approxNero: #262626;
+  --c-black: #000000;
+}
+
+@mixin tablet {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tinyMobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+// Modules styles
+@import "./modules/common";
+
+/* ------------------------------------------------------ *\
+                  User styles
+\* ------------------------------------------------------ */
+@import "./user/about";
+@import "./user/about_skills";
+@import "./user/about_service";
+@import "./user/contact";
+@import "./user/not_found";
+@import "./user/footer";
+
+/* ------------------------------------------------------ *\
+                  Admin styles
+\* ------------------------------------------------------ */
+@import "./admin/experience";
+@import "./admin/home";
+@import "./admin/profile";
+@import "./admin/portfolio";
+@import "./admin/email";
+@import "./admin/skill";
+@import "./admin/witnesses";
