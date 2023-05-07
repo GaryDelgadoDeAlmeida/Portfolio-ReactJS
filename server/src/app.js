@@ -1,7 +1,12 @@
 const express = require('express');
-const database = require('./config/database');
 const cors = require('cors');
-const Portfolio = require('./model/Portfolio');
+
+// Controller
+const PortfolioController = require("./controller/PortfolioController");
+const InboxController = require('./controller/InboxController');
+const WitnessController = require('./controller/WitnessController');
+const SkillController = require('./controller/SkillController');
+const UserController = require('./controller/UserController');
 
 const app = express();
 
@@ -28,83 +33,19 @@ app.use((req, res, next) => {
 \* ---------------------------------------------------- */
 
 // Route to get all folios
-app.get("/api/portfolio", (req, res) => {
-    let { offset } = req.params;
-    offset = offset > 1 ? offset : 1
-    const limit = 15
-    
-    const portfolio = new Portfolio()
-    portfolio.getPortfolios(offset, limit, (data, err) => {
-        if(err) {
-            res.status(500).send(err)
-        } else {
-            res.send(data)
-        }
-    })
-});
+app.get("/api/portfolio", (req, res) => PortfolioController.getAllFolios(req, res));
 
 // Route to get one folio
-app.get("/api/portfolio/:portfolioID", (req, res) => {
-    const portfolioID = req.params.portfolioID;
-
-    const portfolio = new Portfolio()
-    portfolio.getPortfolio(portfolioID, (data, err) => {
-        if(err) {
-            res.status(500).send(err)
-        } else {
-            res.send(data)
-        }
-    })
-});
+app.get("/api/portfolio/:portfolioID", (req, res) => PortfolioController.getSingleFolio(req, res));
 
 // Route for creating the folio
-app.post('/api/portfolio', (req, res) => {
-    const [
-        name, 
-        img_path, 
-        github_link,
-        type,
-        version,
-        created_at
-    ] = req.body;
-
-    database.query("INSERT INTO project (name, img_path, github_link, type, version, created_at) VALUES (?, ?, ?, ?, ?, ?)", [name, img_path, github_link, type, version, created_at], (err, result) => {
-        if(err) {
-            console.log(err)
-        } 
-        console.log(result)
-    });
-})
+app.post('/api/portfolio', (req, res) => PortfolioController.postSingleFolio(req, res))
 
 // Route to update a folio
-app.put('/api/portfolio/:id', (req, res) => {
-    const id = req.params.id;
-    const [
-        name,
-        github_link,
-        type,
-        version
-    ] = req.body
-
-    database.query("UPDATE project SET name = ?, github_link = ?, type = ?, version = ? WHERE id = ?", [name, github_link, type, version, id], (err, result) => {
-        if(err) {
-            console.log(err)
-        }
-        
-        console.log(result)
-    });    
-});
+app.put('/api/portfolio/:id', (req, res) => PortfolioController.updateSingleFolio(req, res));
 
 // Route to delete a folio
-app.delete('/api/portfolio/:id', (req, res) => {
-    const id = req.params.id;
-
-    database.query("DELETE FROM project WHERE id= ?", id, (err, result) => {
-        if(err) {
-            console.log(err)
-        }
-    });
-});
+app.delete('/api/portfolio/:id', (req, res) => PortfolioController.removeSingleFolio(req, res));
 
 
 /* ---------------------------------------------------- *\
@@ -112,10 +53,20 @@ app.delete('/api/portfolio/:id', (req, res) => {
 \* ---------------------------------------------------- */
 
 // Route to get data of the user
-app.get("/api/user", (req, res) => {});
+app.get("/api/user", (req, res) => UserController.getUser(req, res));
 
 // Route to update data of the user
-app.put("/api/user/:id", (req, res) => {});
+app.put("/api/user/:id", (req, res) => UserController.updateUser(req, res));
+
+
+/* ---------------------------------------------------- *\
+    Skills
+\* ---------------------------------------------------- */
+app.get("/api/skill", (req, res) => SkillController.getSkills(req, res))
+
+app.post("/api/skill", (req, res) => SkillController.postSkill(req, res))
+
+app.delete("/api/skill/:id", (req, res) => SkillController.removeSkill(req, res))
 
 
 /* ---------------------------------------------------- *\
@@ -133,5 +84,39 @@ app.put("/api/experience/:id", (req, res) => {});
 
 // Route to delete an experience/formation
 app.delete("/api/experience/:id", (req, res) => {});
+
+
+/* ---------------------------------------------------- *\
+    Witnesses
+\* ---------------------------------------------------- */
+app.get("/api/witnesses", (req, res) => WitnessController.getAllWitnesses(req, res))
+
+app.post("/api/witnesses", (req, res) => WitnessController.postWitness(req, res))
+
+app.delete("/api/witnesses", (req, res) => WitnessController.deleteWitness(req, res))
+
+
+/* ---------------------------------------------------- *\
+    Services
+\* ---------------------------------------------------- */
+app.get("/api/services", (req, res) => {})
+
+app.post("/api/services", (req, res) => {})
+
+app.put("/api/services/:id", (req, res) => {})
+
+
+/* ---------------------------------------------------- *\
+    Inbox
+\* ---------------------------------------------------- */
+app.get("/api/inbox", (req, res) => InboxController.getAllInbox(req, res))
+
+app.post("/api/inbox", (req, res) => InboxController.postInbox(req, res))
+
+app.get("/api/inbox/:id", (req, res) => InboxController.getSingleInbox(req, res))
+
+app.put("/api/inbox/:id", (req, res) => InboxController.updateInbox(req, res))
+
+app.delete("/api/inbox/:id", (req, res) => InboxController.removeInbox(req, res))
 
 module.exports = app

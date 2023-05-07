@@ -15,7 +15,7 @@
         background-color: var(--c-approxNero);
 
         // Mobile
-        @media screen and (max-width: 768px) {
+        @include mobile {
             display: none;
         }
 
@@ -90,7 +90,7 @@
         }
 
         // Mobile
-        @media screen and (max-width: 768px) {
+        @include mobile {
             width: 100vw;
         }
         

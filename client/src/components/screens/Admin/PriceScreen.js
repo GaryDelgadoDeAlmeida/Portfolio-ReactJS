@@ -144,6 +144,13 @@ export default function PriceScreen() {
                                     <span>Mise en ligne du site</span>
                                 </li>
                             </ul>
+
+                            <form className={"form"}>
+                                <div className={"form-field-inline"}>
+                                    <input className={"field"} type={"text"} name={"techname"} placeholder={"Insert a tech name"} onChange={(e) => console.log("Hello onChange")} />
+                                    <button className={"btn btn-primary"} type={"submit"}>Submit</button>
+                                </div>
+                            </form>
                         </div>
 
                         {/* ecommerce */}

@@ -177,6 +177,18 @@ form {
         }
     }
 
+    .form-field-inline {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .field {
+            flex: 1;
+            border: 1px solid var(--c-silver);
+            border-radius: 0% !important;
+        }
+    }
+
     .form-button {
         text-align: right;
 

@@ -12,6 +12,7 @@ class Portfolio {
     }
 
     /**
+     * Find all projects
      * 
      * @param {*} offset 
      * @param {*} limit 
@@ -29,6 +30,7 @@ class Portfolio {
     }
 
     /**
+     * Find a single project by Id
      * 
      * @param {*} portfolioID 
      * @param {*} result 
@@ -45,6 +47,7 @@ class Portfolio {
     }
 
     /**
+     * Insert a new project
      * 
      * @param {*} result 
      */
@@ -64,8 +67,15 @@ class Portfolio {
      * @param {*} portfolioID 
      * @param {*} result 
      */
-    updatePortfolio(portfolioID, result) {
-        // 
+    updatePortfolio(portfolioID, fields, result) {
+        database.query("UPDATE project SET name = ?, github_link = ?, type = ?, version = ? WHERE id = ?", [fields.name, fields.github_link, fields.type, fields.version, portfolioID], (err, res) => {
+            if(err) {
+                result(null, err)
+                return
+            }
+            
+            result(res, null)
+        });
     }
 
     /**
@@ -74,7 +84,14 @@ class Portfolio {
      * @param {*} result 
      */
     removePortfolio(portfolioID, result) {
-        // 
+        database.query("DELETE FROM project WHERE id = ?", portfolioID, (err, res) => {
+            if(err) {
+                result(null, err)
+                return
+            }
+
+            result(res, null)
+        })
     }
 }
 

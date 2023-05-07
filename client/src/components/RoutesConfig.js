@@ -21,6 +21,7 @@ import AdminExperienceAddScreen from './screens/Admin/ExperienceAddScreen';
 import AdminWitnessesScreen from './screens/Admin/WitnessesScreen';
 import AdminWitnessesAddScreen from './screens/Admin/WitnessesAddScreen';
 import AdminPriceScreen from "./screens/Admin/PriceScreen";
+import AdminPriceAddScreen from "./screens/Admin/PriceAddScreen";
 
 // Common
 import LoginScreen from "./screens/LoginScreen";
@@ -43,7 +44,7 @@ export default function RoutesConfig() {
             <Route path="/admin/experiences/:experienceID" element={<AdminExperienceScreen />} />
             <Route path="/admin/experiences/:experienceID/edit" element={<AdminExperienceScreen />} />
             <Route path="/admin/prices" element={<AdminPriceScreen />} />
-            <Route path="/admin/prices/add" element={"Hi"} />
+            <Route path="/admin/prices/add" element={<AdminPriceAddScreen />} />
             <Route path="/admin/prices/:price" element={"Hi"} />
             <Route path="/admin/prices/:price/edit" element={"Hi"} />
             <Route path="/admin/email" element={<AdminEmailScreen />} />
