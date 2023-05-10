@@ -103,47 +103,24 @@ export default function PriceScreen() {
                         </button>
                     </div>
                     <div className={"-content"}>
-                        
-                        {/* {Object.entries(verticalTabsContent).map((item, key) => (
-                            <div className={`-tab-content ${verticalTabs[key] ? "show" : ""}`}>
-                                {item.description !== [] ? (
-                                    item.description.map((row, i) => (
-                                        <ul>
-                                            <li>{row}</li>
-                                        </ul>
-                                    ))
-                                ) : ""}
-                            </div>
-                        ))} */}
-                        
+
                         {/* showcase */}
                         <div className={`-tab-content ${verticalTabs.showcase ? "show" : ""}`}>
-                            <ul>
-                                <li>
-                                    <span>Développements sur-mesure (entièrement fait à la main)</span>
-                                </li>
-                                <li>
-                                    <span>Charte graphique à partir d'une maquette (Outils : Figma)</span>
-                                </li>
-                                <li>
-                                    <span>Palette de couleur</span>
-                                </li>
-                                <li>
-                                    <span>Interface administrateur</span>
-                                </li>
-                                <li>
-                                    <span>Site responsive</span>
-                                </li>
-                                <li>
-                                    <span>Mise en place du contenu</span>
-                                </li>
-                                <li>
-                                    <span>Formulaire de contact</span>
-                                </li>
-                                <li>
-                                    <span>Mise en ligne du site</span>
-                                </li>
-                            </ul>
+                            {verticalTabsContent.showcase.description !== [] ? (
+                                <ul>
+                                    {console.log(verticalTabsContent.showcase.description)}
+                                    {verticalTabsContent.showcase.description.map((item, index) => (
+                                        <li key={index}>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : null}
+
+                            <div className={"price"}>
+                                {verticalTabsContent.showcase.price}
+                                {verticalTabsContent.showcase.currency}
+                            </div>
 
                             <form className={"form"}>
                                 <div className={"form-field-inline"}>
@@ -155,59 +132,56 @@ export default function PriceScreen() {
 
                         {/* ecommerce */}
                         <div className={`-tab-content ${verticalTabs.ecommerce ? "show" : ""}`}>
-                            <ul>
-                                <li>
-                                    <span>Développements sur-mesure (entièrement fait à la main)</span>
-                                </li>
-                                <li>
-                                    <span>Symfony (outil de développement)</span>
-                                </li>
-                                <li>
-                                    <span>Charte graphique à partir d'une maquette (Outils : Figma)</span>
-                                </li>
-                                <li>
-                                    <span>Palette de couleur</span>
-                                </li>
-                                <li>
-                                    <span>Interface administrateur</span>
-                                </li>
-                                <li>
-                                    <span>Site responsive</span>
-                                </li>
-                                <li>
-                                    <span>Mise en place du contenu</span>
-                                </li>
-                                <li>
-                                    <span>Formulaire de contact</span>
-                                </li>
-                                <li>
-                                    <span>Mise en ligne du site</span>
-                                </li>
-                                <li>
-                                    <span>Statistiques (visites, produits les plus achetés, etc ...)</span>
-                                </li>
-                            </ul>
+                            {verticalTabsContent.ecommerce.description !== [] ? (
+                                <ul>
+                                    {verticalTabsContent.ecommerce.description.map((item, index) => (
+                                        <li key={index}>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : null}
+
+                            <div className={"-price"}>
+                                {verticalTabsContent.ecommerce.price}
+                                {verticalTabsContent.ecommerce.currency}
+                            </div>
                         </div>
                         
                         {/* tjm */}
-                        <div className={`-tab-content ${verticalTabs.tjm ? "show" : ""}`}></div>
+                        <div className={`-tab-content ${verticalTabs.tjm ? "show" : ""}`}>
+                            {verticalTabsContent.tjm.description !== [] ? (
+                                <ul>
+                                    {verticalTabsContent.tjm.description.map((item, index) => (
+                                        <li key={index}>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : null}
+
+                            <div className={"-price"}>
+                                {verticalTabsContent.tjm.price}
+                                {verticalTabsContent.tjm.currency}
+                            </div>
+                        </div>
                         
                         {/* maintenance */}
                         <div className={`-tab-content ${verticalTabs.maintenance ? "show" : ""}`}>
-                            <ul>
-                                <li>
-                                    <span>Mise à jour de sécurité (mise à jours des dépendances techniques)</span>
-                                </li>
-                                <li>
-                                    <span>Modification du contenu textuel</span>
-                                </li>
-                                <li>
-                                    <span>Modification graphique légère</span>
-                                </li>
-                                <li>
-                                    <span>Correction de bugs</span>
-                                </li>
-                            </ul>
+                            {verticalTabsContent.maintenance.description !== [] ? (
+                                <ul>
+                                    {verticalTabsContent.maintenance.description.map((item, index) => (
+                                        <li key={index}>
+                                            <span>{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : null}
+
+                            <div className={"-price"}>
+                                {verticalTabsContent.maintenance.price}
+                                {verticalTabsContent.maintenance.currency}
+                            </div>
                         </div>
                     </div>
                 </div>
